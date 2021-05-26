@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+.menu {
+    width: 300px;
+    height: 100vh;
+    background-color: $mainColour;
+    // making the menu appear on the right side of the screen
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // makes the transion of animations slower
+    transition: all 1s ease;
+
+    // if the class is active place it 0px from the right
+    &.active{
+        right:0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-weight: 300;
+        color: white;
+        // preventing the width from changing on hover
+        width: 60%;
+
+        li {
+            margin-bottom: 20px;
+
+            a {
+                // uses the font-size, color of the parent element; and removes the underline from the link
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            // wheenver li is hovered, change font-weight
+            &:hover {
+                font-weight: 500;
+            }
+        }
+    }
+}

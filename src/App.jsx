@@ -18,7 +18,7 @@ function App() {
     <div className="app">
       {/* Passing the state into the header component */}
       <Header headerState={menuOpen} setHeaderState={setMenuOpen} />
-      <Menu/>
+      <Menu headerState={menuOpen} setHeaderState={setMenuOpen}/>
       <div className="sections">
         <Intro/>
         <Portfolio/>

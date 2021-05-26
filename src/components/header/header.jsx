@@ -3,6 +3,7 @@ import './header.scss';
 import logo from './AdamGalekLogo.png';
 import logo2 from './AdamGalekLogo2.png';
 import logo3 from './AdamGalekLogo3.png';
+import logo4 from './AdamGalekLogo4.png';
 import { Person, Mail} from '@material-ui/icons';
 
 
@@ -17,7 +18,7 @@ export default function header({ headerState, setHeaderState }) {
                     </a>
                     <div className="itemContainer">
                         <Person className="icon"/>
-                        <span>+44</span>
+                        <span>Testing</span>
                     </div>
                     <div className="itemContainer">
                         <Mail className="icon"/>
