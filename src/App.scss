@@ -1,0 +1,30 @@
+.app {
+  height: 100vh;
+
+  .sections {
+      width: 100%;
+      // section height is 100% of viewheight - the header size
+      height: calc(100vh - 70px);
+      // making sure the fixed header doesn't overflow the sections
+      position: relative;
+      top: 70px;
+      // making the scrolling to sections smooth
+      scroll-behavior: smooth;
+      // making sure scrolling snaps to section
+      // https://stackoverflow.com/questions/64581125/website-double-scrolling-on-chrome-using-scroll-snap-type
+      scroll-snap-type: y mandatory;
+      scrollbar-width: none; // for firefox
+      &::-webkit-scrollbar{
+          display: none;
+      }
+
+
+      // for EACH element inside sections
+      > * {
+          width: 100vw;
+          height: calc(100vh - 70px);
+          // makes sure that when a section is snapped to, it snaps to start of the section
+          scroll-snap-align: start;
+      }
+  }
+}

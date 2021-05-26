@@ -1,5 +1,19 @@
+@import "../../global.scss";
+
 .header {
     width: 100%;
     height: 70px;
-    background-color: #15023a;
+    background-color: white;
+    color: $mainColour;
+    // Keeping header at the top of the page
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

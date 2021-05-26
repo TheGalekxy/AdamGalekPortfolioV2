@@ -5,6 +5,8 @@ import Experience from "./components/experience/experience";
 import Testimonials from "./components/testimonials/testimonials";
 import Contact from "./components/contact/contact";
 
+import './App.scss';
+
 
 
 function App() {
