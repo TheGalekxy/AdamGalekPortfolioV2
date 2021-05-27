@@ -63,7 +63,7 @@ export default function Experience() {
                             </div>
                         </div>
                         <div className="right">
-                            <img src="https://i.ytimg.com/vi/OamFaj71xCA/maxresdefault.jpg" alt="" />
+                            <img src={item.img} alt="" />
                         </div>
                     </div>
                 </div>
