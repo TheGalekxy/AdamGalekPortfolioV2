@@ -84,7 +84,14 @@ export default function Portfolio() {
             <div className="container">
                 {
                     data.map(data=>(
-                        <Link to="/portfolioItem">
+                        // https://ui.dev/react-router-v5-pass-props-to-link/
+                        <Link to={{
+                            pathname: `/portfolioItem/${data.id}`,
+                            state: {
+                                img: `${data.img}`,
+                                title: `${data.title}`
+                            }
+                            }}>
                                 <div className="item">
                                     <img src={data.img} alt="" />
                                     <h3>{data.title}</h3>

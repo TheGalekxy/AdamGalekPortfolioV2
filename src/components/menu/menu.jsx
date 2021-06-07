@@ -5,7 +5,7 @@ import {Route, BrowserRouter as Router, Link, useLocation} from "react-router-do
 export default function Menu({ headerState, setHeaderState }) {
     // https://stackoverflow.com/questions/42253277/react-router-v4-how-to-get-current-route
     const location = useLocation();
-    console.log(location.pathname);
+    // console.log(location.pathname);
     if (location.pathname === "/portfolioItem"){
         return (
             <div className={"menu " +(headerState && "active")}>

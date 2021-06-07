@@ -34,8 +34,9 @@ function App() {
                 {/* <PortfolioItem name="adam"/> */}
               </div>
             </Route>
-            <Route path="/portfolioItem"> 
-              <PortfolioItem name="adam"/>
+            <Route path="/portfolioItem/:id"> 
+              <PortfolioItem/>
+              {/* <PortfolioItem name="adam"/> */}
             </Route>
           </Switch>
       </div>
