@@ -5,6 +5,9 @@ import Experience from "./components/experience/experience";
 import Testimonials from "./components/testimonials/testimonials";
 import Contact from "./components/contact/contact";
 import Menu from "./components/menu/menu";
+import PortfolioItem from "./components/portfolioItem/portfolioItem";
+
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 
 import './App.scss';
 
@@ -15,18 +18,28 @@ function App() {
   // creating a state for the header
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="app">
-      {/* Passing the state into the header component */}
-      <Header headerState={menuOpen} setHeaderState={setMenuOpen} />
-      <Menu headerState={menuOpen} setHeaderState={setMenuOpen}/>
-      <div className="sections">
-        <Intro/>
-        <Portfolio/>
-        <Experience/>
-        <Testimonials/>
-        <Contact/>
+    <Router>
+      <div className="app">
+        {/* Passing the state into the header component */}
+        <Header headerState={menuOpen} setHeaderState={setMenuOpen} />
+        <Menu headerState={menuOpen} setHeaderState={setMenuOpen}/>
+          <Switch>
+            <Route exact path="/"> 
+              <div className="sections">
+                <Intro/>
+                <Portfolio/>
+                <Experience/>
+                <Testimonials/>
+                <Contact/>
+                {/* <PortfolioItem name="adam"/> */}
+              </div>
+            </Route>
+            <Route path="/portfolioItem"> 
+              <PortfolioItem name="adam"/>
+            </Route>
+          </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 

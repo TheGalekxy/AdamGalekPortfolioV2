@@ -5,6 +5,7 @@ import logo2 from './AdamGalekLogo2.png';
 import logo3 from './AdamGalekLogo3.png';
 import logo4 from './AdamGalekLogo4.png';
 import { Person, Mail} from '@material-ui/icons';
+import {Route, BrowserRouter as Router, Link} from "react-router-dom";
 
 
 export default function header({ headerState, setHeaderState }) {
@@ -12,10 +13,11 @@ export default function header({ headerState, setHeaderState }) {
         <div className={"header " + (headerState && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">
+                    <Link to="/" className="logo">
                         {/* If the menu is open, display logo3, if not, display logo 2 */}
                         {headerState ? <img src={logo3} alt="" className="logo-image"/>: <img src={logo2} alt="" className="logo-image"/>}
-                    </a>
+                            
+                    </Link>
                     <div className="itemContainer">
                         <Person className="icon"/>
                         <span>Testing</span>

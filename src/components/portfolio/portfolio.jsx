@@ -10,6 +10,9 @@ import {
     mobilePortfolio
 } from '../../data'
 
+import {Route, BrowserRouter as Router, Link} from "react-router-dom";
+import PortfolioItem from "../portfolioItem/portfolioItem";
+
 export default function Portfolio() {
 
     const [selected, setSelected] = useState("featured");
@@ -81,10 +84,13 @@ export default function Portfolio() {
             <div className="container">
                 {
                     data.map(data=>(
-                        <div className="item">
-                            <img src={data.img} alt="" />
-                            <h3>{data.title}</h3>
-                        </div>
+                        <Link to="/portfolioItem">
+                                <div className="item">
+                                    <img src={data.img} alt="" />
+                                    <h3>{data.title}</h3>
+                                </div>
+                            
+                        </Link>
                     ))
                 }
             </div>
