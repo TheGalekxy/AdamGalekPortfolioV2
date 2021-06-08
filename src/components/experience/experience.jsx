@@ -8,30 +8,33 @@ export default function Experience() {
     const data = [
         {
           id: "1",
-          icon: "./assets/mobile.png",
-          title: "Web Design",
+          icon: "./assets/icons8-youtube-48.png",
+          title: "Galekxy Media",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+            "Galekxy Media is a YouTube channel created to explore my interests in web development, technology, and to help other programmers learn beginniner web development content. ",
           img:
             "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+          link: "https://www.youtube.com/channel/UCvkAweO7HT1d0gUBLX_13Ag",
         },
         {
           id: "2",
-          icon: "./assets/globe.png",
-          title: "Mobile Application",
+          icon: "./assets/icons8-linkedin-48.png",
+          title: "LinkedIn",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Connect with me on LinkedIn",
           img:
             "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+          link: "https://www.linkedin.com/in/adamgalek/",
         },
         {
           id: "3",
-          icon: "./assets/writing.png",
-          title: "Branding",
+          icon: "./assets/icons8-github-48.png",
+          title: "GitHub",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Take a deeper look at my work!",
           img:
             "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+          link: "https://github.com/TheGalekxy", 
         },
       ];
 
@@ -57,9 +60,9 @@ export default function Experience() {
                                 <p> 
                                     {item.desc}
                                 </p>
-                                <span>
-                                    projects
-                                </span>
+                                <a href={item.link} target="_blank" rel="noreferrer">
+                                    {item.title}
+                                </a>
                             </div>
                         </div>
                         <div className="right">
