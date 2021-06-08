@@ -1,5 +1,36 @@
 @import "../../global.scss";
 
 .portfolioItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 70px;
+
+    .container {
+        width: 70%;
+        text-align: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-wrap: wrap;
+
+        h1 {
+            font-size: 50px;
+    
+            @include mobile {
+                font-size: 20px;
+            }
+        }
+    
+        img {
+            max-width: 1000px;
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    }
 }

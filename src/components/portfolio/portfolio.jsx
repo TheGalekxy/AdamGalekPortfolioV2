@@ -4,10 +4,10 @@ import './portfolio.scss';
 import todoList from './todoList.png';
 import {
     featuredPortfolio,
-    webPortfolio,
-    designPortfolio, 
-    contentPortfolio,
-    mobilePortfolio
+    FullStackPortfolio,
+    ReactPortfolio, 
+    PHPPortfolio,
+    netPortfolio
 } from '../../data'
 
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
@@ -24,16 +24,16 @@ export default function Portfolio() {
             title: "Featured",
         },
         {
-            id: "web application",
-            title: "Web Application",
+            id: "Full-Stack",
+            title: "Full-Strack",
         },
         {
-            id: "design",
-            title: "Design",
+            id: "React",
+            title: "React",
         },
         {
-            id: "Css",
-            title: "Css",
+            id: "PHP",
+            title: "PHP",
         },
         {
             id: "Asp.Net",
@@ -47,17 +47,17 @@ export default function Portfolio() {
             case "featured":
                 setData(featuredPortfolio);
                 break;
-            case "web application":
-                setData(webPortfolio);
+            case "Full-Stack":
+                setData(FullStackPortfolio);
                 break;
-            case "Design":
-                setData(designPortfolio);
+            case "React":
+                setData(ReactPortfolio);
                 break;
-            case "Css":
-                setData(contentPortfolio);
+            case "PHP":
+                setData(PHPPortfolio);
                 break;
             case "Asp.Net":
-                setData(mobilePortfolio);
+                setData(netPortfolio);
                 break;
             default:
                 setData(featuredPortfolio)
@@ -89,12 +89,14 @@ export default function Portfolio() {
                             pathname: `/portfolioItem/${data.id}`,
                             state: {
                                 img: `${data.img}`,
-                                title: `${data.title}`
+                                title: `${data.title}`,
+                                description: `${data.description}`
                             }
                             }}>
                                 <div className="item">
                                     <img src={data.img} alt="" />
                                     <h3>{data.title}</h3>
+                                    {/* <p>{data.description}</p> */}
                                 </div>
                             
                         </Link>

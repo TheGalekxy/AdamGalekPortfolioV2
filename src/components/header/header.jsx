@@ -20,11 +20,11 @@ export default function header({ headerState, setHeaderState }) {
                     </Link>
                     <div className="itemContainer">
                         <Person className="icon"/>
-                        <span>Testing</span>
+                        <span>Adam Galek</span>
                     </div>
                     <div className="itemContainer">
                         <Mail className="icon"/>
-                        <span>galekxy13@hotmail.com</span>
+                        <span>Galekxy94@gmail.com</span>
                     </div>
                 </div>
                 <div className="right">
