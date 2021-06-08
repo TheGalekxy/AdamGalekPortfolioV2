@@ -97,8 +97,20 @@ export default function Portfolio() {
                             pathname: `/portfolioItem/${data.id}`,
                             state: {
                                 img: `${data.img}`,
+                                live: `${data.live}`,
+                                github: `${data.github}`,
                                 title: `${data.title}`,
-                                description: `${data.description}`
+                                description: `${data.description}`,
+                                image1: `${data.image1}`,
+                                image2: `${data.image2}`,
+                                image3: `${data.image3}`,
+                                image4: `${data.image4}`,
+                                image5: `${data.image5}`,
+                                text1: `${data.text1}`,
+                                text2: `${data.text2}`,
+                                text3: `${data.text3}`,
+                                text4: `${data.text4}`,
+                                text5: `${data.text5}`,
                             }
                             }}>
                                 <div className="item">

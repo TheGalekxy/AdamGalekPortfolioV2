@@ -5,6 +5,11 @@ import MomsOverMatter from '../src/images/MomsOverMatter.png';
 import NHLapi from '../src/images/NHLapi.png';
 import NoelSemple from '../src/images/NoelSemple.PNG';
 import PHPKnights from '../src/images/PHPKnights.PNG';
+import PHPKnights1 from '../src/images/PHPKnights2.png';
+import PHPKnights2 from '../src/images/PHPKnights3.png';
+import PHPKnights3 from '../src/images/PHPKnights4.png';
+import PHPKnights4 from '../src/images/PHPKnights5.png';
+import PHPKnights5 from '../src/images/PHPKnights6.png';
 
 export const featuredPortfolio = [
 
@@ -34,11 +39,22 @@ export const featuredPortfolio = [
     },
     {
       id: 4,
+
       title: "PHP Knights Movie Tracker",
       img: PHPKnights,
       description: "The PHP Knights Movie Tracker is a web application designed to empower the user in the movie watching experience. It allows the user to track all the movies they have watched, get access to movie recommendations, community curated movie lists, and more! I was responsible for the Movie List feature, which allows registered users to see and create custom movie lists. I was also responsible for the Subscription feature, which allows users to pay for our service through PayPal.",
       live: "https://phpknights.ca/",
       github: "https://github.com/k4iru/discussion",
+      image1: PHPKnights1,
+      image2: PHPKnights2,
+      image3: PHPKnights3,
+      image4: PHPKnights4,
+      image5: PHPKnights5,
+      text1: "One of the main features that I worked on was the “custom list” functionality, which allowed registered users to view or create lists of movies. For example, a user could create a list called “My Favourite Movies” and put a list of movies in it. Any user would then be able to see that list, while the user who created that list would be able to delete and update their created list.",
+      text2: "One challenge that was faced was hiding the update and delete functionality of the list based on which user was logged in. For example, user “john doe” can only update and delete lists created by “john doe”. To solve this issue, I used the logged in user’s username (provided through session variables), passed that into a database query to retrieve the user id, then only displayed the “update” & “delete” buttons for lists that were created by that user id. ",
+      text3: "Working off that, I also wanted to allow any “admin” users the ability to have all the functionality to update and delete any entries, regardless of whether they were the users to create the list. To do this, I retrieved the username (provided by the session variables) of the user, passed that into a database query to retrieve the user id, then used that in another database query that retrieves information about the user. Within that information is whether a user is an admin or not, if the user is an admin the update and delete buttons would be visible, otherwise, they would not.",
+      text4: "One other challenge that was faced was being able to add movies to a list as there is a many to many relationship between the tables. To solve this issue, a “bridging” database table needed to be created to hold all the movies associated with a specific list. After this, database queries needed to be created to insert data into the table of the list being added to and the movie being added. For this, a drop down was created in the “details” view of a list which displayed a list of all movies in the database. From there you could select a movie (which was associated with a hidden id value) and upon submission the aforementioned database query would be sent and the list would be updated with the movie selected.",
+      text5: "In a similar way as with the update and delete buttons mentioned previously. It was also necessary to hide the “add to list” and “delete list” button when viewing a specific list that did not belong to the user. This was accomplished the same way as in the other example.",
     },
     {
       id: 5,
@@ -109,7 +125,7 @@ export const featuredPortfolio = [
       id: 4,
       title: "PHP Knights Movie Tracker",
       img: PHPKnights,
-      description: "The PHP Knights Movie Tracker is a web application designed to empower the user in the movie watching experience. It allows the user to track all the movies they have watched, get access to movie recommendations, community curated movie lists, and more! I was responsible for the Movie List feature, which allows registered users to see and create custom movie lists. I was also responsible for the Subscription feature, which allows users to pay for our service through PayPal.",
+      description: "The PHP Knights Movie Tracker is a web application designed to empower the user in the movie watching experience. It allows the user to track all the movies they have watched, get access to movie recommendations, community curated movie lists, and more!",
       live: "https://phpknights.ca/",
       github: "https://github.com/k4iru/discussion",
     },
