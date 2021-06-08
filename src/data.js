@@ -10,6 +10,8 @@ import PHPKnights2 from '../src/images/PHPKnights3.png';
 import PHPKnights3 from '../src/images/PHPKnights4.png';
 import PHPKnights4 from '../src/images/PHPKnights5.png';
 import PHPKnights5 from '../src/images/PHPKnights6.png';
+import Valorant from '../src/images/Valorant.PNG';
+import TADH from '../src/images/TADH.PNG';
 
 export const featuredPortfolio = [
 
@@ -143,12 +145,14 @@ export const featuredPortfolio = [
     {
       id: 1,
       title: "TADH Hospital Website",
-      img: LyricGenerator,
+      img: TADH,
+      description: "JustCook is a web application that allows the user to get ingredients delivered right to their door by simply picking a recipe! Our app allows users to quickly search up recipes for meals they want to try online then automatically order the ingredients necessary. I was responsible for the implementation of the Shopping Cart Feature, which involved the implementation and use of Redux.",
     },
     {
       id: 2,
       title: "Valorant Custom Game Tracker",
-      img: LyricGenerator,
+      img: Valorant,
+      description: "JustCook is a web application that allows the user to get ingredients delivered right to their door by simply picking a recipe! Our app allows users to quickly search up recipes for meals they want to try online then automatically order the ingredients necessary. I was responsible for the implementation of the Shopping Cart Feature, which involved the implementation and use of Redux.",
     },
   ];
 

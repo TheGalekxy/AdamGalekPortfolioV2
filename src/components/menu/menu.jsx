@@ -21,9 +21,9 @@ export default function Menu({ headerState, setHeaderState }) {
                     <li onClick={()=>setHeaderState(false)}>
                         <a href="#experience">Experience</a>
                     </li>
-                    <li onClick={()=>setHeaderState(false)}>
+                    {/* <li onClick={()=>setHeaderState(false)}>
                         <a href="#testimonials">Testimonials</a>
-                    </li>
+                    </li> */}
                     <li onClick={()=>setHeaderState(false)}>
                         <a href="#contact">Contact</a>
                     </li>

@@ -29,7 +29,7 @@ function App() {
                 <Intro/>
                 <Portfolio/>
                 <Experience/>
-                <Testimonials/>
+                {/* <Testimonials/> */}
                 <Contact/>
                 {/* <PortfolioItem name="adam"/> */}
               </div>
