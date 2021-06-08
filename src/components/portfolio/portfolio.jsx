@@ -7,7 +7,8 @@ import {
     FullStackPortfolio,
     ReactPortfolio, 
     PHPPortfolio,
-    netPortfolio
+    netPortfolio,
+    javascriptPortfolio
 } from '../../data'
 
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
@@ -38,6 +39,10 @@ export default function Portfolio() {
         {
             id: "Asp.Net",
             title: "Asp.Net",
+        },
+        {
+            id: "JavaScript",
+            title: "Vanilla JavaScript",
         }
     ];
 
@@ -58,6 +63,9 @@ export default function Portfolio() {
                 break;
             case "Asp.Net":
                 setData(netPortfolio);
+                break;
+            case "JavaScript":
+                setData(javascriptPortfolio);
                 break;
             default:
                 setData(featuredPortfolio)
