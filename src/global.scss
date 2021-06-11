@@ -1,7 +1,7 @@
 $mainColour:#15023a;
 
 $mobilewidth: 768px;
-$tabletwidth: 1050px;
+$tabletwidth: 1090px;
 
 @mixin mobile {
     @media (max-width: #{$mobilewidth}) {

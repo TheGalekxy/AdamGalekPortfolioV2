@@ -24,6 +24,7 @@ export default function PortfolioItem() {
                             })
                         }
                     </ul>
+                    <h3>Overview</h3>
                     <p>{description}</p>
                     <h3>Technologies Used:</h3>
                     <ul>
@@ -38,9 +39,9 @@ export default function PortfolioItem() {
                     { 
                     // A little bit confusing here... If the github and live props are truthy, then display the text with the link to the live version AND the github, otherwise do another ternary check to see if the github is truthy, if it is display the
                     // github link only, otherwise, display the live link only.
-                    github && live ? <p> If you are interested in taking a closer look at the {title} project you can find the <a href={`${live}`}> Live Site here</a> and you can take a look at the project <a href={`${github}`}> GitHub here</a></p> 
-                    : github ? <p> If you are interested in taking a closer look at the {title} project you can take a look at the project <a href={`${github}`}> GitHub here</a></p>
-                        : <p> If you are interested in taking a closer look at the {title} project you can find the <a href={`${live}`}> Live Site here</a></p>
+                    github && live ? <p className="projectLinkParagraph"> If you are interested in taking a closer look at the {title} project you can find the <a href={`${live}`}> Live Site here</a> and you can take a look at the project <a href={`${github}`}> GitHub here</a></p> 
+                    : github ? <p className="projectLinkParagraph"> If you are interested in taking a closer look at the {title} project you can take a look at the project <a href={`${github}`}> GitHub here</a></p>
+                        : <p className="projectLinkParagraph"> If you are interested in taking a closer look at the {title} project you can find the <a href={`${live}`}> Live Site here</a></p>
                     }
                     
                 </div>
@@ -61,6 +62,7 @@ export default function PortfolioItem() {
                             })
                         }
                     </ul>
+                    <h3>Overview</h3>
                     <p>{description}</p>
                     <p>{text1}</p>
                     <p>{text2}</p>
@@ -85,9 +87,9 @@ export default function PortfolioItem() {
                     { 
                     // A little bit confusing here... If the github and live props are truthy, then display the text with the link to the live version AND the github, otherwise do another ternary check to see if the github is truthy, if it is display the
                     // github link only, otherwise, display the live link only.
-                    github && live ? <p> If you are interested in taking a closer look at the {title} project you can find the <a href={`${live}`}> Live Site here</a> and you can take a look at the project <a href={`${github}`}> GitHub here</a></p> 
-                    : github ? <p> If you are interested in taking a closer look at the {title} project you can take a look at the project <a href={`${github}`}> GitHub here</a></p>
-                        : <p> If you are interested in taking a closer look at the {title} project you can find the <a href={`${live}`}> Live Site here</a></p>
+                    github && live ? <p className="projectLinkParagraph"> If you are interested in taking a closer look at the {title} project you can find the <a href={`${live}`}> Live Site here</a> and you can take a look at the project <a href={`${github}`}> GitHub here</a></p> 
+                    : github ? <p className="projectLinkParagraph"> If you are interested in taking a closer look at the {title} project you can take a look at the project <a href={`${github}`}> GitHub here</a></p>
+                        : <p className="projectLinkParagraph"> If you are interested in taking a closer look at the {title} project you can find the <a href={`${live}`}> Live Site here</a></p>
                     }
                 </div>
             </div>
