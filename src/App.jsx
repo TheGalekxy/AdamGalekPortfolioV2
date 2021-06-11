@@ -30,7 +30,7 @@ function App() {
                 <Portfolio/>
                 <Experience/>
                 {/* <Testimonials/> */}
-                <Contact/>
+                {/* <Contact/> */}
                 {/* <PortfolioItem name="adam"/> */}
               </div>
             </Route>

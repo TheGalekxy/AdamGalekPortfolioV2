@@ -15,15 +15,34 @@
         // justify-content: center;
         // flex-wrap: wrap;
 
-        h1 {
+        .title {
             font-size: 50px;
+            margin: 0 0 1em 0;
     
             @include mobile {
                 font-size: 20px;
             }
         }
+
+        h3 {
+            padding: 10px 0 0;
+        }
+
+        ul {
+            // removes the weird padding at the front of the ul
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+            li {
+                padding: 5px;
+            }
+        }
     
         img {
+            margin: 10px 0;
             max-width: 1000px;
             width: 100%;
             height: auto;
@@ -31,6 +50,7 @@
 
         p {
             margin-top: 20px;
+            font-size: 16px;
         }
     }
 }
