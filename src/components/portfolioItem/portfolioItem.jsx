@@ -35,6 +35,7 @@ export default function PortfolioItem() {
                             })
                         }
                     </ul>
+                    <h3>Take A Deeper Look!</h3>
                     {/* If the github value is truthy, show the github link, otherwise don't show anything */}
                     { 
                     // A little bit confusing here... If the github and live props are truthy, then display the text with the link to the live version AND the github, otherwise do another ternary check to see if the github is truthy, if it is display the
@@ -64,6 +65,7 @@ export default function PortfolioItem() {
                             })
                         }
                     </ul>
+                    <h3> Process & Challenges </h3>
                     <p>{text1}</p>
                     <p>{text2}</p>
                     <img src={`${images[0]}`} alt="{`${image1}`}" />
@@ -83,6 +85,7 @@ export default function PortfolioItem() {
                             })
                         }
                     </ul>
+                    <h3>Take A Deeper Look!</h3>
                     {/* If the github value is truthy, show the github link, otherwise don't show anything */}
                     { 
                     // A little bit confusing here... If the github and live props are truthy, then display the text with the link to the live version AND the github, otherwise do another ternary check to see if the github is truthy, if it is display the

@@ -19,10 +19,27 @@
         &.left {
             left: 100px;
             transform: rotateY(180deg);
+
+            @include widescreen {
+                left: 10px;
+            }
+
+            @include tablet {
+                left: 10px;
+            }
+
         }
 
         &.right {
             right: 100px;
+
+            @include widescreen {
+                right: 10px;
+            }
+
+            @include tablet {
+                right: 10px;
+            }
         }
     }
 
@@ -45,6 +62,10 @@
             align-items: center;
             justify-content: center;
 
+            // @include tablet {
+            //     width: 100vw;
+            // }
+
             .item {
                 width: 1000px;
                 height: 100%;
@@ -52,6 +73,12 @@
                 border-radius: 20px;
                 display: flex;
                 justify-content: center;
+
+                @include tablet {
+                    width: 80%;
+                    height: 100%;
+                    // margin: 15px 0;
+                }
 
                 @include mobile {
                     width: 80%;
@@ -115,6 +142,10 @@
                     h2 {
                         font-size: 20px;
 
+                        @include tablet {
+                            font-size: 16px;
+                        }
+
                         @include mobile {
                             font-size: 13px;
                         }
@@ -123,6 +154,10 @@
                     p {
                         font-size: 16px;
                         text-align: center;
+
+                        @include tablet {
+                            font-size: 14px;
+                        }
 
                         @include mobile {
                             display: none;
