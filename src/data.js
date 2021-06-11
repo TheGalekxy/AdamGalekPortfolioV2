@@ -129,6 +129,28 @@ export const featuredPortfolio = [
       text4: "One other challenge that was faced was being able to add movies to a list as there is a many to many relationship between the tables. To solve this issue, a “bridging” database table needed to be created to hold all the movies associated with a specific list. After this, database queries needed to be created to insert data into the table of the list being added to and the movie being added. For this, a drop down was created in the “details” view of a list which displayed a list of all movies in the database. From there you could select a movie (which was associated with a hidden id value) and upon submission the aforementioned database query would be sent and the list would be updated with the movie selected.",
       text5: "In a similar way as with the update and delete buttons mentioned previously. It was also necessary to hide the “add to list” and “delete list” button when viewing a specific list that did not belong to the user. This was accomplished the same way as in the other example.",
     },
+    {
+      id: 5,
+      title: "TADH Hospital Website",
+      img: TADH,
+      description: "The TADH Hospital Website is a full-stack website redesign and redevelopment of the current Timmins and District Hospital (TADH) website.",
+      live: "",
+      github: "https://github.com/Journeygault/Timmins_V3",
+      technologies: ["HTML5", "CSS", "JavaScript", "C#", "Asp.Net", "Git"],
+      roles: [ "Team Lead", "Developer"],
+      images: [],
+    },
+    {
+      id: 6,
+      title: "Valorant Custom Game Tracker",
+      img: Valorant,
+      description: "The Valorant Custom Game Tracker is a full-stack web application that allows users to keep track of all their valorant custom games.",
+      live: "",
+      github: "https://github.com/TheGalekxy/PassionProject",
+      technologies: ["HTML5", "CSS", "JavaScript", "C#", "Asp.Net", "Git"],
+      roles: ["Web Developer", "Designer"],
+      images: [],
+    },
   ];
   
   export const ReactPortfolio = [

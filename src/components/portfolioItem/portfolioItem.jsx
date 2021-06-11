@@ -15,6 +15,8 @@ export default function PortfolioItem() {
                 <div className="container">
                     <h1>{title}</h1>
                     <img src={`${img}`} alt="" />
+                    <h3>Overview</h3>
+                    <p>{description}</p>
                     <h3>Role(s):</h3>
                     <ul>
                         {/* https://stackoverflow.com/questions/47287177/how-to-loop-over-a-number-in-react-inside-jsx */}
@@ -24,8 +26,6 @@ export default function PortfolioItem() {
                             })
                         }
                     </ul>
-                    <h3>Overview</h3>
-                    <p>{description}</p>
                     <h3>Technologies Used:</h3>
                     <ul>
                         {/* https://stackoverflow.com/questions/47287177/how-to-loop-over-a-number-in-react-inside-jsx */}
@@ -53,17 +53,17 @@ export default function PortfolioItem() {
                 <div className="container">
                     <h1 className="title">{title}</h1>
                     <img src={`${img}`} alt="" />
+                    <h3>Overview</h3>
+                    <p>{description}</p>
                     <h3>Role(s):</h3>
                     <ul>
                         {/* https://stackoverflow.com/questions/47287177/how-to-loop-over-a-number-in-react-inside-jsx */}
                         {
                             [...roles].map(role => {
-                                return <li>{role}</li>
+                                return <li className="role">{role}</li>
                             })
                         }
                     </ul>
-                    <h3>Overview</h3>
-                    <p>{description}</p>
                     <p>{text1}</p>
                     <p>{text2}</p>
                     <img src={`${images[0]}`} alt="{`${image1}`}" />

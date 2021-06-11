@@ -30,6 +30,8 @@
 
         h3, h2 {
             padding: 10px 0 0;
+            color: crimson;
+            font-weight: 600;
         }
 
         ul {
@@ -42,6 +44,7 @@
 
             li {
                 padding: 5px;
+                font-weight: 500;
             }
         }
     
@@ -53,8 +56,14 @@
         }
 
         p {
-            // margin-top: 20px;
+            margin-top: 10px;
             font-size: 16px;
+            font-weight: 400;
+
+            a {
+                color: crimson;
+                font-weight: 500;
+            }
         }
     }
 }
