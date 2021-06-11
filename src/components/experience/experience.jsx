@@ -1,5 +1,8 @@
 import {React, useState} from 'react';
 import './experience.scss';
+import Youtube from '../../images/Youtube.PNG';
+import LinkedIn from '../../images/Linkedin.PNG';
+import Github from '../../images/Github.PNG';
 
 export default function Experience() {
 
@@ -12,8 +15,7 @@ export default function Experience() {
           title: "Galekxy Media",
           desc:
             "Galekxy Media is a YouTube channel created to explore my interests in web development, technology, and to help other programmers learn beginniner web development content. ",
-          img:
-            "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+          img: Youtube,
           link: "https://www.youtube.com/channel/UCvkAweO7HT1d0gUBLX_13Ag",
         },
         {
@@ -22,8 +24,7 @@ export default function Experience() {
           title: "LinkedIn",
           desc:
             "Connect with me on LinkedIn",
-          img:
-            "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+          img: LinkedIn,
           link: "https://www.linkedin.com/in/adamgalek/",
         },
         {
@@ -32,8 +33,7 @@ export default function Experience() {
           title: "GitHub",
           desc:
             "Take a deeper look at my work!",
-          img:
-            "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+          img:Github,
           link: "https://github.com/TheGalekxy", 
         },
       ];
