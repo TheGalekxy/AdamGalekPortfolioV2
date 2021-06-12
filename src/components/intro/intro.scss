@@ -111,6 +111,10 @@
             bottom: 10px;
             left: 0%;
 
+            @include mobile {
+                display: none;
+            }
+
             img {
                 width: 50px;
                 // animating the arrow
